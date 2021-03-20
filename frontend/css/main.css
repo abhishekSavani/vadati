@@ -1,91 +1,90 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
-
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -93,60 +92,88 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+input:-moz-placeholder {
+  color: #adadad;
+}
+input::-moz-placeholder {
+  color: #adadad;
+}
+input:-ms-input-placeholder {
+  color: #adadad;
+}
 
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
+textarea::-webkit-input-placeholder {
+  color: #adadad;
+}
+textarea:-moz-placeholder {
+  color: #adadad;
+}
+textarea::-moz-placeholder {
+  color: #adadad;
+}
+textarea:-ms-input-placeholder {
+  color: #adadad;
+}
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*---------------------------------------------*/
 .container {
-	max-width: 1200px;
+  max-width: 1200px;
 }
-
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -162,7 +189,6 @@ iframe {
   background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
   background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
   background: linear-gradient(45deg, #00dbde, #fc00ff);
-  
 }
 
 .wrap-contact100 {
@@ -172,7 +198,6 @@ iframe {
   overflow: hidden;
   padding: 42px 55px 45px 55px;
 }
-
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -190,8 +215,6 @@ iframe {
   text-align: center;
   padding-bottom: 44px;
 }
-
-
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -234,7 +257,7 @@ iframe {
 }
 
 .focus-input100::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -2px;
@@ -250,19 +273,16 @@ iframe {
   background: #7f7f7f;
 }
 
-
 /*---------------------------------------------*/
 input.input100 {
   height: 40px;
 }
-
 
 textarea.input100 {
   min-height: 110px;
   padding-top: 9px;
   padding-bottom: 13px;
 }
-
 
 .input100:focus + .focus-input100::before {
   width: 100%;
@@ -271,7 +291,6 @@ textarea.input100 {
 .has-val.input100 + .focus-input100::before {
   width: 100%;
 }
-
 
 /*------------------------------------------------------------------
 [ Button ]*/
@@ -351,7 +370,6 @@ textarea.input100 {
   transform: translateX(10px);
 }
 
-
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
@@ -360,8 +378,6 @@ textarea.input100 {
     padding: 72px 15px 65px 15px;
   }
 }
-
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -403,7 +419,7 @@ textarea.input100 {
 }
 
 .alert-validate::after {
-  content: "\f06a";
+  content: '\f06a';
   font-family: FontAwesome;
   display: block;
   position: absolute;
@@ -429,8 +445,6 @@ textarea.input100 {
     opacity: 1;
   }
 }
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Restyle Select2 ]*/
@@ -462,7 +476,7 @@ textarea.input100 {
   font-size: 18px;
   color: #333333;
   line-height: 1.2;
-  padding-left: 5px ;
+  padding-left: 5px;
   background-color: transparent;
 }
 
@@ -488,7 +502,7 @@ textarea.input100 {
 .select2-selection__arrow::before {
   content: '';
   display: block;
-  
+
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   border-bottom: 5px solid #999999;
@@ -498,7 +512,7 @@ textarea.input100 {
 .select2-selection__arrow::after {
   content: '';
   display: block;
-  
+
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   border-top: 5px solid #999999;
@@ -519,15 +533,19 @@ textarea.input100 {
   -ms-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.select2-dropdown--above {top: -30px;}
-.select2-dropdown--below {top: 8px;}
+.select2-dropdown--above {
+  top: -30px;
+}
+.select2-dropdown--below {
+  top: 8px;
+}
 
 .select2-container .select2-results__option[aria-selected] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.select2-container .select2-results__option[aria-selected="true"] {
+.select2-container .select2-results__option[aria-selected='true'] {
   background: #a64bf4;
   background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
   background: -o-linear-gradient(right, #00dbde, #fc00ff);
@@ -561,7 +579,24 @@ textarea.input100 {
   line-height: 1.2;
 }
 
+/* Loader */
 
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
 
-
-
+#loading-image {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  left: 37% !important;
+}

@@ -26,6 +26,9 @@
     <!--===============================================================================================-->
   </head>
   <body>
+    <div id="loading">
+      <img id="loading-image" src="images/icons/loader.gif" alt="Loading..." />
+    </div>
     <div class="container-contact100">
       <div class="wrap-contact100">
         <form class="contact100-form validate-form">
@@ -93,6 +96,12 @@
     </div>
 
     <div id="dropDownSelect1"></div>
+
+    <script>
+      $(window).load(function () {
+        $('#loading').hide();
+      });
+    </script>
 
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
