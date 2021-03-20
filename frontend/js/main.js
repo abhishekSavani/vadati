@@ -90,5 +90,8 @@ function ttsApiCall(name, voiceId, language, text) {
       $('#loading').hide();
       $('#audioElement').attr('src', response?.data?.url);
     })
-    .catch((error) => console.error(error));
+    .catch((error) => {
+      $('#loading').hide();
+      if (error) alert('Wrong voice select OR Wrong language....');
+    });
 }
