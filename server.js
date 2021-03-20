@@ -10,6 +10,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname + '/frontend'));
+app.set('views', __dirname + '/frontend');
+
+app.set('view engine', 'html');
+
 const polly = new AWS.Polly({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
@@ -20,6 +25,10 @@ const s3 = new AWS.S3({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   region: 'us-east-2',
+});
+
+app.get('*', function (req, res) {
+  res.render('index.html');
 });
 
 app.post('/speech', async (req, res) => {
