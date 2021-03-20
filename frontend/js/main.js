@@ -72,7 +72,7 @@ function submitDetailsForm() {
 function ttsApiCall(name, voiceId, language, text) {
   axios
     .post(
-      'http://localhost:5500/speech',
+      'https://vadati.herokuapp.com/speech',
       {
         Text: text,
       },
