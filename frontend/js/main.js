@@ -57,6 +57,8 @@
   }
 })(jQuery);
 
+// API call functions
+
 function submitDetailsForm() {
   $('#loading').show();
   let name = $('#name').val();
