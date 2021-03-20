@@ -84,5 +84,8 @@ const putObject = (bucket, key, body, ContentType) => {
 
 const server = app.listen(process.env.PORT || 5500, () => {
   const { port } = server.address();
+  console.log('___________________________________');
   console.log(`Server running on PORT ${port}`);
+  console.log(`Text to speech server start`);
+  console.log('___________________________________');
 });
