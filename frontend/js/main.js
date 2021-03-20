@@ -1,6 +1,6 @@
 (function ($) {
   'use strict';
-
+  $('#loading').hide();
   /*==================================================================
   // $('.input100').each(function () {
   //   $(this).on('blur', function () {
@@ -58,6 +58,7 @@
 })(jQuery);
 
 function submitDetailsForm() {
+  $('#loading').show();
   let name = $('#name').val();
   let voiceId = $('#selectVoice option:selected').val();
   let language = $('#selectLanguage option:selected').val();
@@ -84,7 +85,7 @@ function ttsApiCall(name, voiceId, language, text) {
     )
     .then((response) => {
       console.log(response);
-
+      $('#loading').hide();
       $('#audioElement').attr('src', response?.data?.url);
     })
     .catch((error) => console.error(error));
